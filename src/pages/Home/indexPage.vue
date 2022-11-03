@@ -28,6 +28,11 @@ export default {
         FloorPage,
         BrandIcon,
     },
+    computed:{
+    },
+    methods:{
+       
+    }
 };
 </script>
 
