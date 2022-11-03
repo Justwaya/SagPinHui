@@ -2,7 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router/index";
 //三级联动组件
-import TypeNavIndex from "@/pages/Home/TypeNavIndex";
+import TypeNavIndex from "@/components/TypeNavIndex";
 
 import store from "@/store";
 

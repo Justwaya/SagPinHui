@@ -18,6 +18,7 @@ import RankSort from "@/pages/Home/RankSort";
 import LikeGuess from "@/pages/Home/LikeGuess";
 import FloorPage from "@/pages/Home/FloorPage";
 import BrandIcon from "@/pages/Home/BrandIcon";
+
 export default {
     name: "indexPage",
     components: {
@@ -26,7 +27,7 @@ export default {
         RankSort,
         LikeGuess,
         FloorPage,
-        BrandIcon,
+        BrandIcon
     },
     computed:{
     },

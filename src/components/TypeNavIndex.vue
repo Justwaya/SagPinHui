@@ -1693,8 +1693,30 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
-    name:'TypeNavIndex'
+    name:'TypeNavIndex',
+
+    data() {
+        return {
+            
+        }
+    },
+    computed:{
+        //对象写法
+        /*...mapState({
+            categoryList:(state)=>{
+               return state.home.categoryList
+            }
+        })*/
+        //数组写法 '数据名' 'store模块'
+        ...mapState('categoryList',['categoryList'])
+    },
+    mounted(){
+    //通过Vuex发送网络请求
+        this.$store.dispatch('categoryList');
+        console.log(this.categoryList)
+    }
 };
 </script>
 
